@@ -81,7 +81,7 @@ This steps loads the following environment variables during its execution. These
 ```groovy
 onIBMi('PUB400') {
     print "Command job is ${env.IBMI_COMMAND_JOB}"
-    print "Current CCSID is ${env.IBMI_PROFILE}"
+    print "Current USER is ${env.IBMI_PROFILE}"
 
     //Some pipeline steps running on PUB400
     ibmiCommand "SNDMSG MSG('Hello from Jenkins') TOUSR(ESPENGLER)"
